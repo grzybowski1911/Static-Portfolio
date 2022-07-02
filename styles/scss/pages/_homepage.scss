@@ -1,0 +1,78 @@
+h1 {
+    color: black;
+}
+
+.banner-full {
+    min-height: 100vh;
+}
+
+.banner-overlay {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(270deg, #6093BF, #72CEF2, #7aa5bf, #CEE8F2, #f2f2f2);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+.banner-home {
+    background: url('../../assets/images/bg-mtns.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-logo {
+    min-width: 250px;
+}
+
+.section-one {
+    background: black;
+    padding: 25px 50px 25px 25px;
+    color: white;
+
+    h1 {
+        color: white;
+    }
+
+    .custom-row {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .headshot {
+        position: relative;
+        .border {
+            width: 90%;
+            height: 100%;
+            position: absolute;
+            border: 2px solid white !important;
+            top: -30px;
+            right: -10px;
+            z-index: 10;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
