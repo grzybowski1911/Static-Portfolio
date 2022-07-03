@@ -1,6 +1,10 @@
 .pad {
   padding: 25px; }
 
+.btn-1 {
+  background: black;
+  color: white; }
+
 h1 {
   color: black; }
 
@@ -26,7 +30,7 @@ h1 {
 
 .section-one {
   background: black;
-  padding: 25px 50px 25px 25px;
+  padding: 75px 25px 25px 25px;
   color: white; }
   .section-one h1 {
     color: white; }
@@ -46,6 +50,18 @@ h1 {
     .section-one .headshot img {
       display: block;
       margin: 0 auto; }
+
+.section-three .job-card {
+  display: flex;
+  align-items: center; }
+  .section-three .job-card img {
+    max-width: 250px; }
+
+.section-three .sticky {
+  position: sticky;
+  top: 50px; }
+  .section-three .sticky img {
+    max-width: 150px; }
 
 @-webkit-keyframes AnimationName {
   0% {
