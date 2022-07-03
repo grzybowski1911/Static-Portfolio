@@ -27,3 +27,15 @@
         color: #7aa5bf;
     }
 }
+
+.btn-3 {
+    background: #6093BF;
+    color: white;
+    border: solid 2px #7aa5bf;
+    transition: all .5s;
+    &:hover {
+        border: solid 2px #6093BF;
+        background: white;
+        color: #6093BF;
+    }
+}

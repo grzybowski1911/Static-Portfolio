@@ -50,7 +50,15 @@ h1 {
     h1 {
         color: white;
     }
-
+    .buttons {
+        margin-top: 50px;
+        .btn {
+            min-width: 250px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
     .headshot {
         position: relative;
         .border {
@@ -93,7 +101,7 @@ h1 {
     }
     .sticky {
         position: sticky;
-        top: 50px;
+        top: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
