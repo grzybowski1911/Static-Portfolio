@@ -72,3 +72,14 @@ rect.draw-rect {
     transform: translatey(0px);
 	animation: hover-up-down 3s 4s ease-in-out infinite;
 }
+
+@keyframes rotate {
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+#circle {
+    animation-timing-function: linear;
+    transform-origin: center;
+    animation: rotate 120s infinite;
+}

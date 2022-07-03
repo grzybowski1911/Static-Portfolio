@@ -66,6 +66,17 @@ rect.draw-rect {
   transform: translatey(0px);
   animation: hover-up-down 3s 4s ease-in-out infinite; }
 
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg); }
+  to {
+    transform: rotate(360deg); } }
+
+#circle {
+  animation-timing-function: linear;
+  transform-origin: center;
+  animation: rotate 120s infinite; }
+
 .btn {
   text-decoration: none;
   font-family: 'Raleway', sans-serif; }
@@ -204,7 +215,15 @@ h1 {
 .section-two {
   background-color: #f2f2f2;
   min-height: 100vh;
-  z-index: 99; }
+  z-index: 99;
+  position: relative;
+  overflow: hidden; }
+  .section-two .bg-svg {
+    position: absolute;
+    width: 65%;
+    top: 0;
+    right: -10%;
+    opacity: 0.15; }
 
 .section-three {
   padding-left: 0;
@@ -269,7 +288,15 @@ h1 {
 .section-five {
   background: #f2f2f2;
   min-height: 100vh;
-  z-index: 3; }
+  z-index: 3;
+  position: relative;
+  overflow: hidden; }
+  .section-five .bg-svg {
+    position: absolute;
+    width: 65%;
+    top: 0;
+    left: -10%;
+    opacity: 0.15; }
 
 @-webkit-keyframes AnimationName {
   0% {

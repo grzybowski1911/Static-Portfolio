@@ -87,6 +87,15 @@ h1 {
     background-color: #f2f2f2;
     min-height: 100vh;
     z-index: 99;
+    position: relative;
+    overflow: hidden;
+    .bg-svg {
+        position: absolute;
+        width: 65%;
+        top: 0;
+        right: -10%;
+        opacity: 0.15;
+    }
 }
 
 .section-three {
@@ -166,6 +175,15 @@ h1 {
     background: #f2f2f2;
     min-height: 100vh;
     z-index: 3;
+    position: relative;
+    overflow: hidden;
+    .bg-svg {
+        position: absolute;
+        width: 65%;
+        top: 0;
+        left: -10%;
+        opacity: 0.15;
+    }
 }
 
 
