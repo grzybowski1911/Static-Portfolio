@@ -10,7 +10,7 @@
     color: white;
     border: solid 2px black;
     transition: all .5s;
-    &:hover {
+    &:hover, &:active, &:focus {
         border: solid 2px black;
         background: white;
         color: black;
@@ -22,7 +22,7 @@
     color: white;
     border: solid 2px #7aa5bf;
     transition: all .5s;
-    &:hover {
+    &:hover, &:active, &:focus, &:focus-visible {
         border: solid 2px #7aa5bf;
         background: white;
         color: #7aa5bf;
@@ -34,7 +34,7 @@
     color: white;
     border: solid 2px #7aa5bf;
     transition: all .5s;
-    &:hover {
+    &:hover, &:active, &:focus, &:focus-visible {
         border: solid 2px #6093BF;
         background: white;
         color: #6093BF;
@@ -46,7 +46,7 @@
     color: white;
     border: solid 2px #72CEF2;
     transition: all .5s;
-    &:hover {
+    &:hover, &:active, &:focus, &:focus-visible {
         border: solid 2px #72CEF2;
         background: white;
         color: #72CEF2;

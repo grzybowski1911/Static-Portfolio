@@ -14,6 +14,25 @@ nav {
     img {
         padding: 5px;
     }
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            transition: all .5s;
+            &:after {
+            content: '|';
+            margin-left: 10px;
+            margin-right: 10px;
+            }
+            &:last-child:after {
+                content: none;
+            }
+            &:hover {
+                color: #72CEF2;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 .fixed {

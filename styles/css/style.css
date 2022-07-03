@@ -8,7 +8,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lobster', cursive; }
 
-body p {
+body p, body span, body ul {
   font-family: 'Roboto', sans-serif; }
 
 @keyframes draw-down-arrow {
@@ -86,7 +86,7 @@ rect.draw-rect {
   color: white;
   border: solid 2px black;
   transition: all .5s; }
-  .btn-1:hover {
+  .btn-1:hover, .btn-1:active, .btn-1:focus {
     border: solid 2px black;
     background: white;
     color: black; }
@@ -96,7 +96,7 @@ rect.draw-rect {
   color: white;
   border: solid 2px #7aa5bf;
   transition: all .5s; }
-  .btn-2:hover {
+  .btn-2:hover, .btn-2:active, .btn-2:focus, .btn-2:focus-visible {
     border: solid 2px #7aa5bf;
     background: white;
     color: #7aa5bf; }
@@ -106,7 +106,7 @@ rect.draw-rect {
   color: white;
   border: solid 2px #7aa5bf;
   transition: all .5s; }
-  .btn-3:hover {
+  .btn-3:hover, .btn-3:active, .btn-3:focus, .btn-3:focus-visible {
     border: solid 2px #6093BF;
     background: white;
     color: #6093BF; }
@@ -116,14 +116,49 @@ rect.draw-rect {
   color: white;
   border: solid 2px #72CEF2;
   transition: all .5s; }
-  .btn-4:hover {
+  .btn-4:hover, .btn-4:active, .btn-4:focus, .btn-4:focus-visible {
     border: solid 2px #72CEF2;
     background: white;
     color: #72CEF2; }
 
 footer {
   min-height: 100vh;
-  background-color: black; }
+  background-color: black;
+  color: white; }
+  footer .col-md-12 {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    footer .col-md-12 h4 {
+      text-align: center; }
+    footer .col-md-12 ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      min-width: 500px; }
+      footer .col-md-12 ul li {
+        transition: all .5s; }
+        footer .col-md-12 ul li:after {
+          content: '|';
+          margin-left: 10px;
+          margin-right: 10px; }
+        footer .col-md-12 ul li:last-child:after {
+          content: none; }
+        footer .col-md-12 ul li:hover {
+          color: #72CEF2;
+          cursor: pointer; }
+    footer .col-md-12 i:hover {
+      transition: all .5s;
+      color: #72CEF2;
+      cursor: pointer; }
+  footer .social {
+    display: flex;
+    justify-content: space-evenly; }
+  footer img {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block; }
 
 nav {
   z-index: 9999;
@@ -139,6 +174,19 @@ nav {
     align-items: center; }
   nav img {
     padding: 5px; }
+  nav ul li {
+    display: flex;
+    align-items: center;
+    transition: all .5s; }
+    nav ul li:after {
+      content: '|';
+      margin-left: 10px;
+      margin-right: 10px; }
+    nav ul li:last-child:after {
+      content: none; }
+    nav ul li:hover {
+      color: #72CEF2;
+      cursor: pointer; }
 
 .fixed {
   top: 0% !important; }

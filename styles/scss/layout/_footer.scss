@@ -1,4 +1,52 @@
 footer {
     min-height: 100vh;
     background-color: black;
+    color: white;
+
+    .col-md-12 {
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h4 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            min-width: 500px;
+            li {
+                transition: all .5s;
+                &:after {
+                content: '|';
+                margin-left: 10px;
+                margin-right: 10px;
+                }
+                &:last-child:after {
+                    content: none;
+                }
+                &:hover {
+                    color: #72CEF2;
+                    cursor: pointer;
+                }
+            }
+        }
+        i:hover {
+            transition: all .5s;
+            color: #72CEF2; 
+            cursor: pointer;
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    img {
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
 }
