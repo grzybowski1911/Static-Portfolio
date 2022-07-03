@@ -5,9 +5,49 @@
   max-width: 1200px;
   margin: 0 auto; }
 
+.btn {
+  text-decoration: none; }
+
 .btn-1 {
   background: black;
-  color: white; }
+  color: white;
+  border: solid 2px black;
+  transition: all .5s; }
+  .btn-1:hover {
+    border: solid 2px black;
+    background: white;
+    color: black; }
+
+.btn-2 {
+  background: #7aa5bf;
+  color: white;
+  border: solid 2px #7aa5bf;
+  transition: all .5s; }
+  .btn-2:hover {
+    border: solid 2px #7aa5bf;
+    background: white;
+    color: #7aa5bf; }
+
+footer {
+  min-height: 100vh;
+  background-color: black; }
+
+nav {
+  z-index: 9999;
+  padding: 0 !important;
+  position: fixed !important;
+  top: -100%;
+  width: 100vw;
+  transition: all .5s;
+  box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.5); }
+  nav .navbar-brand {
+    display: flex;
+    align-items: center; }
+  nav img {
+    padding: 5px; }
+
+.fixed {
+  top: 0% !important; }
 
 h1 {
   color: black; }
@@ -49,7 +89,8 @@ h1 {
   padding: 75px 25px 25px 25px;
   color: white;
   margin-top: 100vh;
-  min-height: 100vh; }
+  min-height: 100vh;
+  z-index: 99; }
   .section-one h1 {
     color: white; }
   .section-one .headshot {
@@ -68,11 +109,13 @@ h1 {
 
 .section-two {
   background-color: #f2f2f2;
-  min-height: 100vh; }
+  min-height: 100vh;
+  z-index: 99; }
 
 .section-three {
   padding-left: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  z-index: 99; }
   .section-three .col-md-8 {
     background: white;
     padding-left: 50px; }
@@ -95,7 +138,8 @@ h1 {
 .section-four {
   min-height: 100vh;
   background: white;
-  padding: 75px 25px 25px 25px; }
+  padding: 75px 25px 25px 25px;
+  z-index: 99; }
   .section-four .portfolio-item {
     min-height: 350px;
     margin: 15px;
@@ -108,8 +152,14 @@ h1 {
       min-height: 350px;
       display: flex;
       justify-content: center; }
+      .section-four .portfolio-item .top h4 {
+        margin-top: 25px;
+        color: white;
+        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        z-index: 99; }
     .section-four .portfolio-item .btm {
       background: rgba(0, 0, 0, 0.5);
+      color: white;
       transition: all .5s;
       position: absolute;
       bottom: -100%;
@@ -121,6 +171,11 @@ h1 {
       justify-content: center; }
     .section-four .portfolio-item:hover .btm {
       bottom: 0%; }
+
+.section-five {
+  background: #f2f2f2;
+  min-height: 100vh;
+  z-index: 3; }
 
 @-webkit-keyframes AnimationName {
   0% {

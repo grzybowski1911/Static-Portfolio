@@ -10,3 +10,17 @@ const fadeLogo = () => {
     logo.style.opacity = op;
 }
 window.addEventListener('scroll', fadeLogo);
+
+
+(function($) {
+    $( document ).ready(function() {
+        let menu = $('#nav-menu-scroll');
+        document.addEventListener('scroll', () => {
+            if(window.scrollY > 300) {
+                menu.addClass('fixed');
+            } else {
+                menu.removeClass('fixed');
+            }
+        });
+    });	
+})( jQuery );

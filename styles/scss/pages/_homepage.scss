@@ -46,7 +46,7 @@ h1 {
     color: white;
     margin-top: 100vh;
     min-height: 100vh;
-
+    z-index: 99;
     h1 {
         color: white;
     }
@@ -73,12 +73,13 @@ h1 {
 .section-two {
     background-color: #f2f2f2;
     min-height: 100vh;
-
+    z-index: 99;
 }
 
 .section-three {
     padding-left: 0;
     margin-left: 0;
+    z-index: 99;
     .col-md-8 {
         background: white;
         padding-left: 50px;
@@ -108,6 +109,7 @@ h1 {
     min-height: 100vh;
     background: white;
     padding: 75px 25px 25px 25px;
+    z-index: 99;
     .portfolio-item {
         min-height: 350px;
         margin: 15px;
@@ -120,9 +122,16 @@ h1 {
             min-height: 350px;
             display: flex;
             justify-content: center;
+            h4 {
+                margin-top: 25px;
+                color: white;
+                text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+                z-index: 99;
+            }
         }
         .btm {
             background: rgba(0,0,0,0.5);
+            color: white;
             transition: all .5s;
             position: absolute;
             bottom: -100%;
@@ -138,6 +147,12 @@ h1 {
             //transform: translateY(100%);
         }
     }
+}
+
+.section-five {
+    background: #f2f2f2;
+    min-height: 100vh;
+    z-index: 3;
 }
 
 
