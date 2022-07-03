@@ -6,6 +6,20 @@ h1 {
     min-height: 100vh;
 }
 
+.scroll-banner {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.scroll-content {
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+}
+
 .banner-overlay {
     height: 100vh;
     width: 100%;
@@ -30,6 +44,8 @@ h1 {
     background: black;
     padding: 75px 25px 25px 25px;
     color: white;
+    margin-top: 100vh;
+    min-height: 100vh;
 
     h1 {
         color: white;
