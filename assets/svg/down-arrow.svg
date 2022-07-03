@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.43 407.91">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.43 412.91">
   <defs>
     <style>
-      .cls-1,.cls-2{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:5px}.cls-2{stroke-linecap:round}
+      .cls-32,.cls-232{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:10px}.cls-232{stroke-linecap:round}
     </style>
   </defs>
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1">
-      <rect class="cls-1" x="2.5" y="2.5" width="188.43" height="296.11" rx="81.17"/>
-      <circle class="cls-1" cx="96.71" cy="55.78" r="19.45"/>
-      <path class="cls-2" d="M96.71 191.8v213.61M96.71 405.41l42.43-42.42M54.29 362.99l42.42 42.42"/>
+      <rect class="cls-32 draw-rect" x="5" y="5" width="188.43" height="296.11" rx="81.17"/>
+      <circle class="cls-32 draw-circle" cx="99.21" cy="58.28" r="19.45"/>
+      <path class="cls-232 draw-arrow" d="M99.21 194.3v213.61M99.21 407.91l42.43-42.42M56.79 365.49l42.42 42.42"/>
     </g>
   </g>
 </svg>

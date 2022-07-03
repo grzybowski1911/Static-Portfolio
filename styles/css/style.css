@@ -11,6 +11,61 @@ h1, h2, h3, h4, h5, h6 {
 body p {
   font-family: 'Roboto', sans-serif; }
 
+@keyframes draw-down-arrow {
+  from {
+    stroke-dashoffset: 334; }
+  to {
+    stroke-dashoffset: 0; } }
+
+path.draw-arrow {
+  stroke-dashoffset: -334;
+  stroke-dasharray: 334;
+  animation-name: draw-down-arrow;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+@keyframes draw-down-circle {
+  from {
+    stroke-dashoffset: 122; }
+  to {
+    stroke-dashoffset: 0; } }
+
+circle.draw-circle {
+  stroke-dashoffset: -122;
+  stroke-dasharray: 122;
+  animation: draw-down-circle .75s 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+@keyframes draw-down-rect {
+  from {
+    stroke-dashoffset: 829; }
+  to {
+    stroke-dashoffset: 0; } }
+
+rect.draw-rect {
+  stroke-dashoffset: -829;
+  stroke-dasharray: 829;
+  animation-name: draw-down-rect;
+  animation-delay: 2s;
+  animation-duration: .75s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+@keyframes hover-up-down {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(-25px); }
+  100% {
+    transform: translatey(0px); } }
+
+.arrow-conatiner {
+  transform: translatey(0px);
+  animation: hover-up-down 3s 4s ease-in-out infinite; }
+
 .btn {
   text-decoration: none;
   font-family: 'Raleway', sans-serif; }
@@ -89,6 +144,13 @@ h1 {
   height: 100vh;
   width: 100vw;
   z-index: 1; }
+  .scroll-banner .banner-logo {
+    min-width: 250px; }
+  .scroll-banner #down-arrow {
+    max-width: 50px;
+    position: absolute;
+    bottom: 25px;
+    left: 48%; }
 
 .scroll-content {
   position: absolute;
@@ -108,9 +170,6 @@ h1 {
   background: url("../../assets/images/bg-mtns.png");
   background-size: cover;
   background-attachment: fixed; }
-
-.banner-logo {
-  min-width: 250px; }
 
 .section-one {
   background: black;

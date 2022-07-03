@@ -12,6 +12,15 @@ h1 {
     height: 100vh;
     width: 100vw;
     z-index: 1;
+    .banner-logo {
+        min-width: 250px;
+    }
+    #down-arrow {
+        max-width: 50px;
+        position: absolute;
+        bottom: 25px;
+        left: 48%;
+    }
 }
 
 .scroll-content {
@@ -34,10 +43,6 @@ h1 {
     background: url('../../assets/images/bg-mtns.png');
     background-size: cover;
     background-attachment: fixed;
-}
-
-.banner-logo {
-    min-width: 250px;
 }
 
 .section-one {
