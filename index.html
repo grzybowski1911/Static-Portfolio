@@ -3,6 +3,7 @@
   <head>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- custom styles -->
     <link rel="stylesheet" href="styles/css/style.css" type="text/css" />
@@ -33,8 +34,8 @@
           </div>
         </div>
       </div>
-    <div class="container section-two pad">
-      <div class="row pad">
+    <div class="container-fluid section-two d-flex justify-content-center align-items-center pad">
+      <div class="row custom-row pad">
         <div class="col-12">
           <h2>Skillset</h2>
         </div>
@@ -75,7 +76,7 @@
         <div class="col-md-8">
             <div class="job-card">
               <div class="job-img pad">
-                <img src="assets/images/amp-logo.png" alt="">
+                <img class="pad" src="assets/images/amp-logo.png" alt="">
               </div>
               <div class="job-content pad">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -84,7 +85,7 @@
             </div>
             <div class="job-card">
               <div class="job-img pad">
-                <img src="assets/images/amp-logo.png" alt="">
+                <img class="pad" src="assets/images/amp-logo.png" alt="">
               </div>
               <div class="job-content pad">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -93,7 +94,7 @@
             </div>
             <div class="job-card">
               <div class="job-img pad">
-                <img src="assets/images/amp-logo.png" alt="">
+                <img class="pad" src="assets/images/amp-logo.png" alt="">
               </div>
               <div class="job-content pad">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -102,7 +103,7 @@
             </div>
             <div class="job-card">
               <div class="job-img pad">
-                <img src="assets/images/amp-logo.png" alt="">
+                <img class="pad" src="assets/images/amp-logo.png" alt="">
               </div>
               <div class="job-content pad">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -111,7 +112,7 @@
             </div>
             <div class="job-card">
               <div class="job-img pad">
-                <img src="assets/images/amp-logo.png" alt="">
+                <img class="pad" src="assets/images/amp-logo.png" alt="">
               </div>
               <div class="job-content pad">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -127,34 +128,75 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid section-three">
-      <div id="fp-carousel" class="carousel vert slide" data-ride="carousel">
-        <div class="controls">
-            <div class="title">
-                <h2>Recent Projects</h2>
+    <div class="container-fluid section-four">
+      <div class="row custom-row">
+        <div class="col-md-4">
+          <div class="portfolio-item" style="background-image: url('assets/images/thumb-1.jpg');">
+            <div class="top">
+              <h4>Project Title</h4>
             </div>
-            <div class="buttons">
-                <a class="button ga-carousel-interaction" href="#fp-carousel" role="button" data-slide="next">
-                    <span>Next Project</span>
-                </a>
-                <a class="button ga-portfolio-button" href="/portfolio">
-                    <span>All Projects</span>
-                </a>
+            <div class="btm pad">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button type="button" class="btn btn-link btn-1">Learn More</button>
             </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item">
-              <div class="carousel-content">
-                  <div class="carousel-left" data-animation="animated fadeInLeft">
-                      <img src="assets/images/amp-logo.png" alt="">
-                  </div>
-                  <div class="carousel-right" data-animation="animated fadeInRight">
-                      <h4>Title</h4>
-                      <p></p>
-                  </div>
-              </div>
+        <div class="col-md-4">
+          <div class="portfolio-item" style="background-image: url('assets/images/thumb-2.jpg');">
+            <div class="top">
+              <h4>Project Title</h4>
             </div>
+            <div class="btm pad">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button type="button" class="btn btn-link btn-1">Learn More</button>
+            </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="portfolio-item" style="background-image: url('assets/images/thumb-3.jpg');">
+            <div class="top">
+              <h4>Project Title</h4>
+            </div>
+            <div class="btm pad">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button type="button" class="btn btn-link btn-1">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item" style="background-image: url('assets/images/thumb-4.jpg');">
+            <div class="top">
+              <h4>Project Title</h4>
+            </div>
+            <div class="btm pad">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button type="button" class="btn btn-link btn-1">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item" style="background-image: url('assets/images/thumb-5.jpg');">
+            <div class="top">
+              <h4>Project Title</h4>
+            </div>
+            <div class="btm pad">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button type="button" class="btn btn-link btn-1">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item" style="background-image: url('assets/images/thumb-6.jpg');">
+            <div class="top">
+              <h4>Project Title</h4>
+            </div>
+            <div class="btm pad">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button type="button" class="btn btn-link btn-1">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
     </div>

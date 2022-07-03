@@ -5,7 +5,7 @@ const fadeLogo = () => {
     if(pos <= hero) {
         var op = 1 - pos / hero; 
         } else {
-            op = 1;
+            op = 0;
         }
     logo.style.opacity = op;
 }
