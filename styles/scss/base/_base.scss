@@ -40,3 +40,15 @@
         color: #6093BF;
     }
 }
+
+.btn-4 {
+    background: #72CEF2;
+    color: white;
+    border: solid 2px #72CEF2;
+    transition: all .5s;
+    &:hover {
+        border: solid 2px #72CEF2;
+        background: white;
+        color: #72CEF2;
+    }
+}
