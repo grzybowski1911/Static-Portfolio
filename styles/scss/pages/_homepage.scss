@@ -34,9 +34,14 @@ h1 {
     z-index: 1;
     .banner-logo {
         min-width: 250px;
-        //@include respond(phone) {
-        //
-        //}
+        @include respond(phone) {
+            min-width: 200px;
+        }
+    }
+    .row {
+        @include respond(phone) {
+            position: relative;
+        }
     }
     #down-arrow {
         max-width: 50px;
@@ -45,6 +50,8 @@ h1 {
         left: 48%;
         @include respond (phone) {
             left: 43%;
+            bottom: -100px;
+            max-width: 35px;
         }
     }
 }
@@ -69,6 +76,9 @@ h1 {
     background: url('../../assets/images/bg-mtns.png');
     background-size: cover;
     background-attachment: fixed;
+    @include respond(phone) {
+        background-attachment: unset;
+    }
 }
 
 .section-one {

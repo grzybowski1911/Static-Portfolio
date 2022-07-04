@@ -213,6 +213,12 @@ h1 {
   z-index: 1; }
   .scroll-banner .banner-logo {
     min-width: 250px; }
+    @media (max-width: 600px) {
+      .scroll-banner .banner-logo {
+        min-width: 200px; } }
+  @media (max-width: 600px) {
+    .scroll-banner .row {
+      position: relative; } }
   .scroll-banner #down-arrow {
     max-width: 50px;
     position: absolute;
@@ -220,7 +226,9 @@ h1 {
     left: 48%; }
     @media (max-width: 600px) {
       .scroll-banner #down-arrow {
-        left: 43%; } }
+        left: 43%;
+        bottom: -100px;
+        max-width: 35px; } }
 
 .scroll-content {
   position: absolute;
@@ -240,6 +248,9 @@ h1 {
   background: url("../../assets/images/bg-mtns.png");
   background-size: cover;
   background-attachment: fixed; }
+  @media (max-width: 600px) {
+    .banner-home {
+      background-attachment: unset; } }
 
 .section-one {
   background: black;
