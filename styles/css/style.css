@@ -163,7 +163,7 @@ footer {
   footer .social {
     display: flex;
     justify-content: space-evenly; }
-  footer img {
+  footer img, footer svg {
     max-width: 150px;
     margin: 0 auto;
     display: block; }
