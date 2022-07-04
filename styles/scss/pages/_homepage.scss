@@ -1,3 +1,23 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) { @content }; //600px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) { @content }; //900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) { @content }; //1200px
+    }
+    @if $breakpoint == big-d {
+        @media (min-width: 1800px) { @content }; //1800px
+    }
+}
+
+// blank mixin
+//@include respond(phone) {
+//
+//}
+
 h1 {
     color: black;
 }
@@ -14,12 +34,18 @@ h1 {
     z-index: 1;
     .banner-logo {
         min-width: 250px;
+        //@include respond(phone) {
+        //
+        //}
     }
     #down-arrow {
         max-width: 50px;
         position: absolute;
         bottom: 25px;
         left: 48%;
+        @include respond (phone) {
+            left: 43%;
+        }
     }
 }
 
@@ -63,6 +89,10 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @include respond(phone) {
+            flex-direction: column;
+            min-height: 150px;
+        }
     }
     .headshot {
         position: relative;
@@ -74,10 +104,14 @@ h1 {
             top: -30px;
             right: -10px;
             z-index: 10;
+            @include respond(phone) {
+                display: none;
+            }
         }
         img {
             display: block;
             margin: 0 auto;
+            width: 100%;
         }
     }
 
@@ -95,6 +129,11 @@ h1 {
         top: 0;
         right: -10%;
         opacity: 0.15;
+        @include respond(phone){
+            width: 165%;
+            top: 25%;
+            right: 5%;
+        }
     }
 }
 
@@ -105,12 +144,18 @@ h1 {
     .col-md-8 {
         background: white;
         padding-left: 50px;
+        @include respond(phone) {
+            padding-left: 0;
+        }
     }
     .job-card {
         display: flex;
         align-items: center;
         img {
             max-width: 250px;
+            @include respond(phone) {
+                display: none;
+            }
         }
     }
     .sticky {
@@ -177,12 +222,20 @@ h1 {
     z-index: 3;
     position: relative;
     overflow: hidden;
+    .col-md-4 {
+        z-index: 99;
+    }
     .bg-svg {
         position: absolute;
         width: 65%;
         top: 0;
         left: -10%;
         opacity: 0.15;
+        @include respond(phone) {
+            width: 165%;
+            top: 25%;
+            left: 5%;
+        }
     }
 }
 

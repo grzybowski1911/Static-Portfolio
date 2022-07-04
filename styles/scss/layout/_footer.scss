@@ -16,12 +16,20 @@ footer {
             display: flex;
             justify-content: space-evenly;
             min-width: 500px;
+            @include respond(phone) {
+                min-width: unset;
+                flex-direction: column;
+                align-items: center;;
+            }
             li {
                 transition: all .5s;
                 &:after {
                 content: '|';
                 margin-left: 10px;
                 margin-right: 10px;
+                    @include respond(phone) {
+                        content: '';
+                    }
                 }
                 &:last-child:after {
                     content: none;

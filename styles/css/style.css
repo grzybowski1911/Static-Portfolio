@@ -58,7 +58,7 @@ rect.draw-rect {
   0% {
     transform: translatey(0px); }
   50% {
-    transform: translatey(-25px); }
+    transform: translatey(-45px); }
   100% {
     transform: translatey(0px); } }
 
@@ -137,12 +137,20 @@ footer {
       display: flex;
       justify-content: space-evenly;
       min-width: 500px; }
+      @media (max-width: 600px) {
+        footer .col-md-12 ul {
+          min-width: unset;
+          flex-direction: column;
+          align-items: center; } }
       footer .col-md-12 ul li {
         transition: all .5s; }
         footer .col-md-12 ul li:after {
           content: '|';
           margin-left: 10px;
           margin-right: 10px; }
+          @media (max-width: 600px) {
+            footer .col-md-12 ul li:after {
+              content: ''; } }
         footer .col-md-12 ul li:last-child:after {
           content: none; }
         footer .col-md-12 ul li:hover {
@@ -210,6 +218,9 @@ h1 {
     position: absolute;
     bottom: 25px;
     left: 48%; }
+    @media (max-width: 600px) {
+      .scroll-banner #down-arrow {
+        left: 43%; } }
 
 .scroll-content {
   position: absolute;
@@ -246,6 +257,10 @@ h1 {
     justify-content: space-evenly; }
     .section-one .buttons .btn {
       min-width: 250px; }
+    @media (max-width: 600px) {
+      .section-one .buttons {
+        flex-direction: column;
+        min-height: 150px; } }
   .section-one .headshot {
     position: relative; }
     .section-one .headshot .border {
@@ -256,9 +271,13 @@ h1 {
       top: -30px;
       right: -10px;
       z-index: 10; }
+      @media (max-width: 600px) {
+        .section-one .headshot .border {
+          display: none; } }
     .section-one .headshot img {
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 100%; }
 
 .section-two {
   background-color: #f2f2f2;
@@ -272,6 +291,11 @@ h1 {
     top: 0;
     right: -10%;
     opacity: 0.15; }
+    @media (max-width: 600px) {
+      .section-two .bg-svg {
+        width: 165%;
+        top: 25%;
+        right: 5%; } }
 
 .section-three {
   padding-left: 0;
@@ -280,11 +304,17 @@ h1 {
   .section-three .col-md-8 {
     background: white;
     padding-left: 50px; }
+    @media (max-width: 600px) {
+      .section-three .col-md-8 {
+        padding-left: 0; } }
   .section-three .job-card {
     display: flex;
     align-items: center; }
     .section-three .job-card img {
       max-width: 250px; }
+      @media (max-width: 600px) {
+        .section-three .job-card img {
+          display: none; } }
   .section-three .sticky {
     position: sticky;
     top: 150px;
@@ -339,12 +369,19 @@ h1 {
   z-index: 3;
   position: relative;
   overflow: hidden; }
+  .section-five .col-md-4 {
+    z-index: 99; }
   .section-five .bg-svg {
     position: absolute;
     width: 65%;
     top: 0;
     left: -10%;
     opacity: 0.15; }
+    @media (max-width: 600px) {
+      .section-five .bg-svg {
+        width: 165%;
+        top: 25%;
+        left: 5%; } }
 
 @-webkit-keyframes AnimationName {
   0% {
