@@ -417,3 +417,8 @@ h1 {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+
+.project-banner {
+  min-height: 75vh;
+  background-size: cover;
+  background-attachment: fixed; }
