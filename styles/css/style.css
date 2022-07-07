@@ -199,41 +199,62 @@ nav {
 .fixed {
   top: 0% !important; }
 
+.homepage .banner-overlay {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(270deg, #6093BF, #72CEF2, #7aa5bf, #CEE8F2, #f2f2f2);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite; }
+  .homepage .banner-overlay .banner-home {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background: url("../../assets/images/bg-mtns.png");
+    background-size: cover;
+    background-attachment: fixed; }
+    @media (max-width: 600px) {
+      .homepage .banner-overlay .banner-home {
+        background-attachment: unset; } }
+    .homepage .banner-overlay .banner-home #banner-logo {
+      min-width: 250px; }
+      @media (max-width: 600px) {
+        .homepage .banner-overlay .banner-home #banner-logo {
+          min-width: 200px; } }
+    @media (max-width: 600px) {
+      .homepage .banner-overlay .banner-home .row {
+        position: relative; } }
+    .homepage .banner-overlay .banner-home #down-arrow {
+      max-width: 50px;
+      position: absolute;
+      bottom: 25px;
+      left: 48%; }
+      @media (max-width: 600px) {
+        .homepage .banner-overlay .banner-home #down-arrow {
+          left: 43%;
+          bottom: -100px;
+          max-width: 35px; } }
+
+.homepage .banner-full {
+  min-height: 100vh; }
+
+.projects {
+  min-height: 75vh;
+  background-size: cover;
+  background-attachment: fixed; }
+
 h1 {
   color: black; }
 
-.banner-full {
-  min-height: 100vh; }
-
-.scroll-banner {
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1; }
-  .scroll-banner .banner-logo {
-    min-width: 250px; }
-    @media (max-width: 600px) {
-      .scroll-banner .banner-logo {
-        min-width: 200px; } }
-  @media (max-width: 600px) {
-    .scroll-banner .row {
-      position: relative; } }
-  .scroll-banner #down-arrow {
-    max-width: 50px;
-    position: absolute;
-    bottom: 25px;
-    left: 48%; }
-    @media (max-width: 600px) {
-      .scroll-banner #down-arrow {
-        left: 43%;
-        bottom: -100px;
-        max-width: 35px; } }
-
 .scroll-content {
   position: absolute;
+  top: 0;
   z-index: 99;
-  width: 100vw; }
+  width: 100vw;
+  margin-top: 100vh; }
 
 .banner-overlay {
   height: 100vh;
@@ -256,7 +277,6 @@ h1 {
   background: black;
   padding: 75px 25px 25px 25px;
   color: white;
-  margin-top: 100vh;
   min-height: 100vh;
   z-index: 99; }
   .section-one h1 {
@@ -417,8 +437,3 @@ h1 {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-
-.project-banner {
-  min-height: 75vh;
-  background-size: cover;
-  background-attachment: fixed; }

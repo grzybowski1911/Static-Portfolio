@@ -22,44 +22,13 @@ h1 {
     color: black;
 }
 
-.banner-full {
-    min-height: 100vh;
-}
-
-.scroll-banner {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 1;
-    .banner-logo {
-        min-width: 250px;
-        @include respond(phone) {
-            min-width: 200px;
-        }
-    }
-    .row {
-        @include respond(phone) {
-            position: relative;
-        }
-    }
-    #down-arrow {
-        max-width: 50px;
-        position: absolute;
-        bottom: 25px;
-        left: 48%;
-        @include respond (phone) {
-            left: 43%;
-            bottom: -100px;
-            max-width: 35px;
-        }
-    }
-}
 
 .scroll-content {
     position: absolute;
+    top: 0;
     z-index: 99;
     width: 100vw;
+    margin-top: 100vh;
 }
 
 .banner-overlay {
@@ -81,11 +50,12 @@ h1 {
     }
 }
 
+
+
 .section-one {
     background: black;
     padding: 75px 25px 25px 25px;
     color: white;
-    margin-top: 100vh;
     min-height: 100vh;
     z-index: 99;
     h1 {

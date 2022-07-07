@@ -1,0 +1,55 @@
+.homepage {
+    .banner-overlay {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(270deg, #6093BF, #72CEF2, #7aa5bf, #CEE8F2, #f2f2f2);
+        background-size: 1000% 1000%;
+        -webkit-animation: AnimationName 30s ease infinite;
+        -moz-animation: AnimationName 30s ease infinite;
+        animation: AnimationName 30s ease infinite;
+        .banner-home {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: 1;
+            background: url('../../assets/images/bg-mtns.png');
+            background-size: cover;
+            background-attachment: fixed;
+            @include respond(phone) {
+                background-attachment: unset;
+            }
+            #banner-logo {
+                min-width: 250px;
+                @include respond(phone) {
+                    min-width: 200px;
+                }
+            }
+            .row {
+                @include respond(phone) {
+                    position: relative;
+                }
+            }
+            #down-arrow {
+                max-width: 50px;
+                position: absolute;
+                bottom: 25px;
+                left: 48%;
+                @include respond (phone) {
+                    left: 43%;
+                    bottom: -100px;
+                    max-width: 35px;
+                }
+            }
+        }
+    }
+    .banner-full {
+        min-height: 100vh;
+    }
+}
+
+.projects {
+    min-height: 75vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
