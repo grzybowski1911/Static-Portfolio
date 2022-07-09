@@ -3,6 +3,49 @@
     top: 0;
     z-index: 99;
     width: 100vw;
-    margin-top: 75vh;
-    background: white;
+    margin-top: 100vh;
+
+    .intro {
+        background: white;
+    }
+
+    .assets {
+        background: white;
+    }
+    .preview {
+        .site-preview {
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        .solid-bg {
+            background-color: white;
+            padding-right: 0;
+            .sticky {
+                position: sticky;
+                top: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                min-height: 300px;
+                img {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+    .responsive {
+        background-color: white;
+        img {
+            width: 100%;
+        }
+        .col-8 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
 }

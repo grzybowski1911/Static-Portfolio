@@ -242,7 +242,7 @@ nav {
   min-height: 100vh; }
 
 .projects {
-  min-height: 75vh;
+  min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   position: fixed;
@@ -392,7 +392,8 @@ h1 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      z-index: 999; }
     .section-four .portfolio-item:hover .btm {
       bottom: 0%; }
 
@@ -445,5 +446,33 @@ h1 {
   top: 0;
   z-index: 99;
   width: 100vw;
-  margin-top: 75vh;
-  background: white; }
+  margin-top: 100vh; }
+  .scroll-content-projects .intro {
+    background: white; }
+  .scroll-content-projects .assets {
+    background: white; }
+  .scroll-content-projects .preview .site-preview img {
+    margin: 0 auto;
+    display: block; }
+  .scroll-content-projects .preview .solid-bg {
+    background-color: white;
+    padding-right: 0; }
+    .scroll-content-projects .preview .solid-bg .sticky {
+      position: sticky;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      min-height: 300px; }
+      .scroll-content-projects .preview .solid-bg .sticky img {
+        max-width: 150px; }
+  .scroll-content-projects .responsive {
+    background-color: white; }
+    .scroll-content-projects .responsive img {
+      width: 100%; }
+    .scroll-content-projects .responsive .col-8 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
