@@ -14,13 +14,35 @@
     z-index: 99;
     width: 100vw;
     margin-top: 100vh;
+    img {
+        width: 100%;
+        margin: 15px;
+    }
 
     .intro {
         background: white;
     }
 
+    .logo img, .colors img, .fonts img {
+        max-width: 300px;
+        display: block;
+        margin: 10px auto;
+    }
+
     .assets {
+        h5 {
+            text-align: center;
+        }
         background: white;
+        .fonts {
+            .font-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                @include respond(phone) {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
     }
     .preview {
         .site-preview {

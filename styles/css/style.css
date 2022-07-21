@@ -463,10 +463,25 @@ h1 {
   z-index: 99;
   width: 100vw;
   margin-top: 100vh; }
+  .scroll-content-projects img {
+    width: 100%;
+    margin: 15px; }
   .scroll-content-projects .intro {
     background: white; }
+  .scroll-content-projects .logo img, .scroll-content-projects .colors img, .scroll-content-projects .fonts img {
+    max-width: 300px;
+    display: block;
+    margin: 10px auto; }
   .scroll-content-projects .assets {
     background: white; }
+    .scroll-content-projects .assets h5 {
+      text-align: center; }
+    .scroll-content-projects .assets .fonts .font-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      @media (max-width: 600px) {
+        .scroll-content-projects .assets .fonts .font-container {
+          grid-template-columns: 1fr; } }
   .scroll-content-projects .preview .site-preview img {
     margin: 0 auto;
     display: block; }
