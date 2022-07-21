@@ -79,7 +79,8 @@ rect.draw-rect {
 
 .btn {
   text-decoration: none;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer; }
 
 .btn-1 {
   background: black;
@@ -376,6 +377,8 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5); }
+    .section-four .portfolio-item .btn {
+      cursor: pointer; }
     .section-four .portfolio-item .top {
       min-height: 350px;
       display: flex;
@@ -384,7 +387,9 @@ h1 {
         margin-top: 25px;
         color: white;
         text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-        z-index: 9999; }
+        z-index: 9999;
+        height: 100%;
+        cursor: pointer; }
     .section-four .portfolio-item .btm {
       background: rgba(0, 0, 0, 0.5);
       color: white;
