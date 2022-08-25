@@ -13,6 +13,10 @@ nav {
         margin-left: auto;
     }
     @include respond(tab-land) {
+        .navbar-toggler {
+            border: transparent;
+            box-shadow: none !important;
+        }
         .navbar-nav {
             margin: 0 auto;
         }
@@ -31,11 +35,44 @@ nav {
             width: 100vw;
             height: 100vh !important;
             z-index: 999;
-            transition: all 300ms ease;
+            transition: all 500ms ease;
         }
         .navbar-collapse.show {
             left: 0;
         }
+        /* Hamburger Menu */
+        .mobileNav {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            margin-left: -22px;
+            margin-top: -22px;
+            width: 35px;
+            height: 20px;
+            cursor: pointer;
+            transition: top .5s;
+            transition-delay: .8s;
+        }
+        .active {
+            top: 35px;
+        }
+        .mobileNav b {
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 3px;
+            background-color: black;
+        }
+        .mobileNav b:nth-child(1) {
+            top: 0;
+        }
+        .mobileNav b:nth-child(2) {
+            top: 50%;
+        }
+        .mobileNav b:nth-child(3) {
+            top: 100%;
+        }
+        /* mobileNav */
     }
     .navbar-brand {
         display: flex;

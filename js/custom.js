@@ -41,4 +41,24 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+// hamburger nav-imation
+var mobileNav = $("[data=hamburger-menu]");
+var bar1 = mobileNav.find("b:nth-child(1)");
+var bar2 = mobileNav.find("b:nth-child(2)");
+var bar3 = mobileNav.find("b:nth-child(3)");
+
+
+
+mobileNav.click( function() {
+  $(this).toggleClass("active");
+    if (mobileNav.hasClass("active")) {
+        bar1.velocity({ top: "50%" }, {duration: 200, easing: "ease-in-out"});
+        bar3.velocity({ top: "50%" }, {duration: 200, easing: "ease-in-out"}).velocity({transform: ["rotateZ(90deg)", "rotateZ(0deg)"]},{duration: 400, easing: "ease-in-out"});
+        mobileNav.velocity({transform: ["rotateZ(135deg)", "rotateZ(0deg)"]},{delay: 600, duration: 400, easing: "ease-in-out"});
+    } else {
+        mobileNav.velocity({transform: ["rotateZ(0deg)", "rotateZ(135deg)"]},{duration: 400, easing: "ease-in-out"});
+        bar3.velocity({transform: ["rotateZ(0deg)", "rotateZ(90deg)"]},{duration: 400, easing: "ease-in-out"}).velocity({ top: "100%" }, {duration: 200, easing: "ease-in-out"});
+        bar1.velocity("reverse", {delay: 200});
+    }
+});
 // 
