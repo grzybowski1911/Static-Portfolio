@@ -4,6 +4,10 @@ const fadeLogo = () => {
     let logo = document.getElementById('banner-logo');
     let downArrow = document.getElementById('down-arrow');
 
+    let windowBottom = $(this).scrollTop() + $(this).height();
+    let elementTop = $(".scroll-content").offset().top;
+    let pixel = (windowBottom - elementTop) + 'px';
+
     if(logo) {
         if(pos <= hero) {
             var op = 1 - pos / hero; 
@@ -11,12 +15,17 @@ const fadeLogo = () => {
                 op = 0;
             }
         logo.style.opacity = op;
+        logo.style.marginBottom=pixel;
         if(downArrow) {
             downArrow.style.opacity = op;   
         }
     }
+
 }
-window.addEventListener('scroll', fadeLogo);
+
+$(document).ready(function() {
+    window.addEventListener('scroll', fadeLogo);
+});
 
 
 //slide down nav
@@ -62,15 +71,18 @@ mobileNav.click( function() {
     }
 });
 
-// keep banner logo images centered on scroll
+// 
 
-$(document).ready(function() {
-
-    $(window).scroll(function() {
-        let windowBottom = $(this).scrollTop() + $(this).height();
-        let pixel = (windowBottom - elementTop);
-        let logo = document.getElementById('banner-logo');
-        logo.style.marginBottom=pixel;
-    
-    });
-});
+//$(document).ready(function() {
+//    $(window).scroll(function() {
+//        let windowBottom = $(this).scrollTop() + $(this).height();
+//        let elementTop = $(".scroll-content").offset().top;
+//        let pixel = (windowBottom - elementTop);
+//        let logo = document.getElementById('banner-logo');
+//        
+//        console.log(pixel);
+//
+//        logo.style.marginBottom=pixel;
+//    
+//    });
+//});
