@@ -190,7 +190,10 @@ nav {
       nav .navbar-nav {
         margin: 0 auto; }
       nav .nav-link {
-        color: white; }
+        color: white;
+        font-size: 24px; }
+        nav .nav-link:hover {
+          color: #72CEF2; }
       nav .navbar-collapse {
         position: fixed;
         display: flex;
@@ -249,6 +252,9 @@ nav {
     nav ul li:hover {
       color: #72CEF2;
       cursor: pointer; }
+    @media (max-width: 1200px) {
+      nav ul li .nav-link.active {
+        color: #72CEF2 !important; } }
 
 .fixed {
   top: 0% !important; }

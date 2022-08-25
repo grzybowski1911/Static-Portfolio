@@ -22,6 +22,10 @@ nav {
         }
         .nav-link {
             color: white;
+            font-size: 24px;
+            &:hover {
+                color: #72CEF2;
+            }
         }
         .navbar-collapse {
             position: fixed;
@@ -97,6 +101,12 @@ nav {
             &:hover {
                 color: #72CEF2;
                 cursor: pointer;
+                
+            }
+            @include respond(tab-land) {
+                .nav-link.active {
+                    color: #72CEF2 !important;
+                }
             }
         }
     }

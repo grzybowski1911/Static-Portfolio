@@ -1,8 +1,8 @@
 const fadeLogo = () => {
-    var pos = window.scrollY;
-    var hero = document.getElementById('hero').getBoundingClientRect().height;
-    var logo = document.getElementById('banner-logo');
-    var downArrow = document.getElementById('down-arrow');
+    let pos = window.scrollY;
+    let hero = document.getElementById('hero').getBoundingClientRect().height;
+    let logo = document.getElementById('banner-logo');
+    let downArrow = document.getElementById('down-arrow');
 
     if(logo) {
         if(pos <= hero) {
@@ -36,16 +36,16 @@ window.addEventListener('scroll', fadeLogo);
 
 //tooltips
 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
 // hamburger nav-imation
-var mobileNav = $("[data=hamburger-menu]");
-var bar1 = mobileNav.find("b:nth-child(1)");
-var bar2 = mobileNav.find("b:nth-child(2)");
-var bar3 = mobileNav.find("b:nth-child(3)");
+let mobileNav = $("[data=hamburger-menu]");
+let bar1 = mobileNav.find("b:nth-child(1)");
+let bar2 = mobileNav.find("b:nth-child(2)");
+let bar3 = mobileNav.find("b:nth-child(3)");
 
 
 
@@ -61,4 +61,16 @@ mobileNav.click( function() {
         bar1.velocity("reverse", {delay: 200});
     }
 });
-// 
+
+// keep banner logo images centered on scroll
+
+$(document).ready(function() {
+
+    $(window).scroll(function() {
+        let windowBottom = $(this).scrollTop() + $(this).height();
+        let pixel = (windowBottom - elementTop);
+        let logo = document.getElementById('banner-logo');
+        logo.style.marginBottom=pixel;
+    
+    });
+});
