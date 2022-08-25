@@ -71,18 +71,6 @@ mobileNav.click( function() {
     }
 });
 
-// 
+// iframe hacks 
 
-//$(document).ready(function() {
-//    $(window).scroll(function() {
-//        let windowBottom = $(this).scrollTop() + $(this).height();
-//        let elementTop = $(".scroll-content").offset().top;
-//        let pixel = (windowBottom - elementTop);
-//        let logo = document.getElementById('banner-logo');
-//        
-//        console.log(pixel);
-//
-//        logo.style.marginBottom=pixel;
-//    
-//    });
-//});
+

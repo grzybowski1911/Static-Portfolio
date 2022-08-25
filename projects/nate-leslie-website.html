@@ -5,14 +5,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
+    <!-- velocity -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js" defer></script>
     <!-- custom styles -->
-    <link rel="stylesheet" href="../styles/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/css/style.css" type="text/css" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Ben G. | Web Dev</title>
   </head>
@@ -25,24 +28,28 @@
             Ben G. | Web Dev
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <a class="mobileNav" data="hamburger-menu">
+                <b></b>
+                <b></b>
+                <b></b>
+              </a>
           </button>
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skill Set</a>
+                <a class="nav-link" href="#skillset">Skill Set</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Jobs I've Had</a>
+                <a class="nav-link" href="#jobs">Jobs I've Had</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects I've worked on</a>
+                <a class="nav-link" href="#projects" >Projects I've worked on</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Get in touch</a>
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Get in touch</a>
               </li>
           </div>
         </div>
@@ -166,22 +173,22 @@
           <div class="logo">
             <h5>Logo</h5>
             <hr>
-            <img src="../assets/images/projects/nate/nate-leslie-logo.png" alt="pnw tattoo website design">
+            <img src="../assets/images/projects/nate/nate-leslie-logo.png" alt="pnw tattoo website design" loading="lazy">
           </div>
           <div class="colors">
             <h5>Color Palette</h5>
-            <img src="../assets/images/projects/nate/nate-leslie-color.jpg" alt="pnw tattoo website design colors">
+            <img src="../assets/images/projects/nate/nate-leslie-color.jpg" alt="pnw tattoo website design colors" loading="lazy">
             <hr>
             <img src="" alt="">
           </div>
           <div class="fonts">
             <h5>Fonts</h5>
             <div class="font-container">
-              <img src="../assets/images/projects/nate/font-1.jpg" alt="">
-              <img src="../assets/images/projects/nate/font-2.jpg" alt="">
+              <img src="../assets/images/projects/nate/font-1.jpg" alt="" loading="lazy">
+              <img src="../assets/images/projects/nate/font-2.jpg" alt="" loading="lazy">
             </div>
             <hr>
-            <img src="" alt="">
+            <img src="" alt="" loading="lazy">
           </div>
         </div>
       </div>
@@ -189,7 +196,7 @@
     <section class="container-fluid preview">
       <div class="row">
         <div class="col-md-6 site-preview pad">
-          <img class="pad" src="../assets/images/projects/nate/pnw-tattoo-website-ben-grzybowski.jpg" alt="">
+          <img class="pad" src="../assets/images/projects/nate/pnw-tattoo-website-ben-grzybowski.jpg" alt="" loading="lazy">
         </div>
         <div class="col-md-6 solid-bg pad">
           <div class="sticky pad">
@@ -207,7 +214,7 @@
     <section class="container-fluid responsive">
       <div class="row custom-row pad d-flex justify-content-center align-items-center">
         <div class="col-8 pad">
-          <img src="../assets/images/projects/nate/responsive-tattoo-website-design.jpg" alt="">
+          <img src="../assets/images/projects/nate/responsive-tattoo-website-design.jpg" alt="" loading="lazy">
           <button type="button" class="btn btn-link btn-3" data-bs-toggle="modal" data-bs-target="#contactModal">Learn More</button>
         </div>
       </div>
