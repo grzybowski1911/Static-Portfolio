@@ -42,7 +42,7 @@ h1 {
 }
 
 .banner-home {
-    background: url('../../assets/images/bg-mtns.png');
+    background: url('../../assets/images/bg-mtns.webp');
     background-size: cover;
     background-attachment: fixed;
     @include respond(phone) {
