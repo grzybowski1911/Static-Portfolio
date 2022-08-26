@@ -168,6 +168,17 @@ footer {
     max-width: 150px;
     margin: 0 auto;
     display: block; }
+  footer .upwork-icon {
+    width: 15px;
+    margin: 0; }
+    footer .upwork-icon:hover {
+      cursor: pointer; }
+    footer .upwork-icon .cls-upwork {
+      fill: white;
+      transition: all .5s; }
+      footer .upwork-icon .cls-upwork:hover {
+        fill: #72CEF2;
+        cursor: pointer; }
 
 nav {
   z-index: 9999;
@@ -557,7 +568,7 @@ h1 {
     padding-right: 0; }
     .scroll-content-projects .preview .solid-bg .sticky {
       position: sticky;
-      top: 100px;
+      top: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;

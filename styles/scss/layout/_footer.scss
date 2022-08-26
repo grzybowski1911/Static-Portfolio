@@ -57,4 +57,20 @@ footer {
         margin: 0 auto;
         display: block;
     }
+
+    .upwork-icon {
+        width: 15px;
+        margin: 0;
+        &:hover {
+            cursor: pointer;
+        }
+        .cls-upwork {
+            fill: white;
+            transition: all .5s;
+            &:hover {
+                fill: #72CEF2;
+                cursor: pointer;
+            }
+        }
+    }
 }
