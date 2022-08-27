@@ -322,6 +322,12 @@ nav {
   background-attachment: fixed;
   position: fixed;
   width: 100vw; }
+  @media (max-width: 600px) {
+    .projects {
+      background-attachment: unset; } }
+  @media (max-width: 600px) {
+    .projects #banner-logo {
+      width: 300px; } }
 
 h1 {
   color: black; }
@@ -435,14 +441,15 @@ h1 {
     align-items: center;
     justify-content: space-evenly;
     min-height: 300px; }
-    .section-three .sticky img {
+    .section-three .sticky svg {
       max-width: 150px; }
 
 .section-four {
   min-height: 100vh;
   background: white;
   padding: 75px 25px 25px 25px;
-  z-index: 99; }
+  z-index: 99;
+  text-align: center; }
   .section-four .portfolio-item {
     min-height: 350px;
     margin: 15px;

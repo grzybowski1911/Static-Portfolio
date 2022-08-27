@@ -152,7 +152,7 @@ h1 {
         align-items: center;
         justify-content: space-evenly;
         min-height: 300px;
-        img {
+        svg {
             max-width: 150px;
         }
     }
@@ -163,6 +163,7 @@ h1 {
     background: white;
     padding: 75px 25px 25px 25px;
     z-index: 99;
+    text-align: center;
     .portfolio-item {
         min-height: 350px;
         margin: 15px;

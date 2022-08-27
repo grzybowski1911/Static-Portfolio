@@ -2,11 +2,11 @@ const fadeLogo = () => {
     let pos = window.scrollY;
     let hero = document.getElementById('hero').getBoundingClientRect().height;
     let logo = document.getElementById('banner-logo');
-    let downArrow = document.getElementById('down-arrow');
+    //let downArrow = document.getElementById('down-arrow');
 
     let windowBottom = $(this).scrollTop() + $(this).height();
     let elementTop = $(".scroll-content").offset().top;
-    let pixel = (windowBottom - elementTop) + 'px';
+    let pixel = (windowBottom - elementTop);
 
     if(logo) {
         if(pos <= hero) {
@@ -15,10 +15,12 @@ const fadeLogo = () => {
                 op = 0;
             }
         logo.style.opacity = op;
-        logo.style.marginBottom=pixel;
-        if(downArrow) {
-            downArrow.style.opacity = op;   
+        if(elementTop > pixel) {
+            logo.style.marginBottom=pixel+'px';
         }
+        //if(downArrow) {
+        //    downArrow.style.opacity = op;   
+        //}
     }
 
 }
@@ -34,7 +36,7 @@ $(document).ready(function() {
     $( document ).ready(function() {
         let menu = $('#nav-menu-scroll');
         document.addEventListener('scroll', () => {
-            if(window.scrollY > 300) {
+            if(window.scrollY > 200) {
                 menu.addClass('fixed');
             } else {
                 menu.removeClass('fixed');

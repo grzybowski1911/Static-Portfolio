@@ -54,4 +54,12 @@
     background-attachment: fixed;
     position: fixed;
     width: 100vw;
+    @include respond(phone) {
+        background-attachment: unset;
+    }
+    #banner-logo {
+        @include respond(phone) {
+            width: 300px;
+        }
+    }
 }
