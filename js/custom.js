@@ -42,15 +42,17 @@ $(document).ready(function() {
                 menu.removeClass('fixed');
             }
         });
+    let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        if(tooltipTriggerList) {
+            let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+        }
     });	
 })( jQuery );
 
 //tooltips
 
-let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
 
 // hamburger nav-imation
 let mobileNav = $("[data=hamburger-menu]");
@@ -73,6 +75,21 @@ mobileNav.click( function() {
     }
 });
 
-// iframe hacks 
+// close nav when menu links clicked 
+
+let menuItems = $('.nav-item');
+
+menuItems.click(function() {
+
+});
+
+menuItems.on('click',() => {
+    $('.navbar-collapse').removeClass('show');
+    $('.mobileNav').removeClass('active');
+    mobileNav.velocity({transform: ["rotateZ(0deg)", "rotateZ(135deg)"]},{duration: 400, easing: "ease-in-out"});
+    bar3.velocity({transform: ["rotateZ(0deg)", "rotateZ(90deg)"]},{duration: 400, easing: "ease-in-out"}).velocity({ top: "100%" }, {duration: 200, easing: "ease-in-out"});
+    bar1.velocity("reverse", {delay: 200});
+});
+
 
 
