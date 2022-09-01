@@ -164,6 +164,10 @@ footer {
   footer .social {
     display: flex;
     justify-content: space-evenly; }
+    footer .social a {
+      color: white; }
+      footer .social a:hover {
+        color: #72CEF2; }
   footer img, footer svg {
     max-width: 150px;
     margin: 0 auto;

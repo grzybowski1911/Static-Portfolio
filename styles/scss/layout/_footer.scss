@@ -50,6 +50,12 @@ footer {
     .social {
         display: flex;
         justify-content: space-evenly;
+        a {
+            color: white;
+            &:hover {
+                color: #72CEF2; 
+            }
+        }
     }
 
     img, svg {
