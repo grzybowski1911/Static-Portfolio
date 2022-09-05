@@ -184,6 +184,18 @@ footer {
         fill: #72CEF2;
         cursor: pointer; }
 
+.modal .modal-body .contact {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal .modal-body .contact .entry {
+    margin-right: 10px;
+    font-size: 1em; }
+  .modal .modal-body .contact .mail {
+    font-size: 2em;
+    font-family: 'Lobster'; }
+
 nav {
   z-index: 9999;
   padding: 0 !important;

@@ -80,3 +80,22 @@ footer {
         }
     }
 }
+
+.modal {
+    .modal-body {
+        .contact{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .entry {
+                margin-right: 10px;
+                font-size: 1em;
+            }
+            .mail {
+                font-size: 2em;
+                font-family: 'Lobster';
+            }
+        }
+    }
+}
